@@ -1,2 +1,10 @@
 RewriteEngine On
 RewriteRule ^(.*)$ public/$1
+
+# Basic Auth for Container server
+AuthUserFile /container/application/public/.htuser
+AuthType Basic
+AuthName "testsite"
+
+# Uncomment this line to enable Basic Auth on the site.
+# Require valid-user
