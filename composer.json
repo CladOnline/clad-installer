@@ -1,0 +1,44 @@
+{
+    "name": "cladonline/clad-installer",
+    "type": "silverstripe-recipe",
+    "description": "installer for sla",
+    "repositories": [
+        { "url": "https://github.com/cladonline/theme-co-base.git", "type": "vcs" },
+        { "url": "https://github.com/cladonline/theme-gecco.git", "type": "vcs" }
+        { "url": "https://github.com/cladonline/co-base.git", "type": "vcs" }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "silverstripe/recipe-plugin": "^1.2",
+        "silverstripe/recipe-cms": "^4.5.2@stable",
+        "cladonline/theme-co-base": "dev-master",
+        "cladonline/theme-gecco": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "sminnee/phpunit-mock-objects": "^3.4.5"
+    },
+    "extra": {
+        "project-files-installed": [
+            "app/*",
+            ".env.example"
+        ],
+        "public-files": [
+            "assets/*",
+            "favicon.ico"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
+            "web.config"
+        ],
+        "resources-dir": "_resources"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
