@@ -11,6 +11,7 @@
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1.2",
         "silverstripe/recipe-cms": "^4.5.2@stable",
+        "cladonline/co-base": "dev-master",
         "cladonline/theme-co-base": "dev-master",
         "cladonline/theme-gecco": "dev-master"
     },
