@@ -1,0 +1,9 @@
+---
+Name: gecco
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Gecco\Extensions\SiteConfigExtension
