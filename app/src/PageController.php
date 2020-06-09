@@ -43,6 +43,9 @@ namespace {
                 "{$co}css/header.css",
                 "{$co}css/elements.css",
             ]);
+            Requirements::combine_files('app.combined.js', [
+                "{$co}javascript/menu.js"
+            ]);
         }
     }
 }
